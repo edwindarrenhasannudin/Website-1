@@ -21,21 +21,97 @@ body {
     padding: 20px;
 }
 
-/* Header */
+/* Header Styling */
 header {
     text-align: center;
-    padding: 20px 0;
-    background-color: #3498db;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #3498db, #2980b9);
     color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    z-index: 0;
+    animation: pulse 6s infinite ease-in-out;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+    animation: pulse 8s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
 }
 
 header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
+    letter-spacing: 1.5px;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    z-index: 1;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 0;
+    color: #ecf0f1;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Effect */
+header:hover {
+    background: linear-gradient(135deg, #2980b9, #1abc9c);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease;
 }
 
 /* Navigasi */
@@ -97,33 +173,108 @@ section {
 }
 
 /* Artikel Section */
-article {
-    margin-bottom: 20px;
+#artikel {
+    margin: 50px 0;
     padding: 20px;
-    background-color: #ecf0f1;
-    border-radius: 8px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#artikel h2 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Styling untuk setiap artikel */
+article {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #ecf0f1, #bdc3c7);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 article h3 {
-    font-size: 1.8em;
+    font-size: 2em;
     color: #2980b9;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
 }
 
 article p, blockquote, footer {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    font-family: 'Verdana', sans-serif;
 }
 
+/* Styling untuk blockquote */
 blockquote {
-    background-color: #bdc3c7;
-    padding: 10px;
-    border-left: 5px solid #2980b9;
+    font-style: italic;
+    background-color: #dfe6e9;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+    color: #34495e;
+    margin: 20px 0;
+    position: relative;
 }
 
+blockquote::before {
+    font-size: 3em;
+    color: #3498db;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+
+blockquote::after {
+    font-size: 3em;
+    color: #3498db;
+    position: absolute;
+    bottom: -15px;
+    right: -10px;
+}
+
+article ul, article ol {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+article ul li, article ol li {
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+/* Styling untuk footer di setiap artikel */
 footer {
+    font-size: 1em;
+    color: #7f8c8d;
     text-align: right;
     font-style: italic;
+    margin-top: 20px;
+    border-top: 1px solid #bdc3c7;
+    padding-top: 10px;
+}
+
+/* Transisi animasi hover untuk artikel */
+article:hover footer {
+    color: #2980b9;
 }
 
 /* Galeri Section */
