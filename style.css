@@ -1,0 +1,274 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Wrapper */
+#container {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3498db;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navigasi */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #2980b9;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profil Section */
+section {
+    margin: 20px 0;
+}
+
+#profil {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#profil h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #2980b9;
+}
+
+#profil p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#profil ul {
+    list-style: none;
+    padding: 0;
+}
+
+#profil ul li {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Artikel Section */
+article {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+}
+
+article h3 {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-bottom: 10px;
+}
+
+article p, blockquote, footer {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background-color: #bdc3c7;
+    padding: 10px;
+    border-left: 5px solid #2980b9;
+}
+
+footer {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Galeri Section */
+#galeri {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#galeri figure {
+    text-align: center;
+    margin: 10px;
+}
+
+#galeri img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Bagian Kontak */
+#kontak {
+    background-color: #ecf0f1; /* Warna latar belakang yang ringan */
+    padding: 20px; /* Memberi jarak di dalam kontainer */
+    border-radius: 8px; /* Membuat sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk tampilan lebih elegan */
+    margin-bottom: 30px; /* Jarak antar elemen */
+}
+
+#kontak h2 {
+    font-size: 2em; /* Ukuran judul lebih besar */
+    color: #2980b9; /* Warna teks biru */
+    margin-bottom: 15px;
+}
+
+#kontak p {
+    font-size: 1.2em; /* Ukuran teks lebih besar agar mudah dibaca */
+    margin-bottom: 20px; /* Jarak bawah */
+}
+
+#kontak label {
+    font-weight: bold; /* Teks tebal untuk label */
+    margin-bottom: 10px;
+    display: block; /* Agar label berada di atas input */
+    font-size: 1.1em; /* Ukuran teks label */
+    color: #333; /* Warna teks label */
+}
+
+#kontak input[type="text"], 
+#kontak input[type="email"], 
+#kontak textarea {
+    width: 100%; /* Input akan mengisi seluruh lebar kontainer */
+    padding: 10px; /* Memberi jarak dalam input */
+    border: 1px solid #ccc; /* Garis batas abu-abu terang */
+    border-radius: 5px; /* Sudut melengkung */
+    margin-bottom: 15px; /* Jarak antar elemen input */
+    font-size: 1.1em; /* Ukuran teks di dalam input */
+    transition: border-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+#kontak input[type="text"]:focus, 
+#kontak input[type="email"]:focus, 
+#kontak textarea:focus {
+    border-color: #2980b9; /* Warna border berubah ketika input fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+
+#kontak textarea {
+    resize: vertical; /* Membatasi resize hanya ke arah vertikal */
+}
+
+#kontak input[type="submit"] {
+    background-color: #2980b9; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    padding: 12px 20px; /* Jarak dalam tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung pada tombol */
+    cursor: pointer; /* Pointer berubah saat hover */
+    font-size: 1.2em; /* Ukuran teks tombol */
+    transition: background-color 0.3s ease; /* Efek transisi pada hover */
+}
+
+#kontak input[type="submit"]:hover {
+    background-color: #3498db; /* Warna tombol saat dihover */
+}
+
+/* Sidebar */
+aside {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+aside form {
+    margin-top: 10px;
+}
+
+aside input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+aside input[type="submit"] {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #3498db;
+    color: white;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Edwin Darren Hasannudin</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS eksternal -->
+</head>
+<body>
+
+    <!-- Wrapper atau Container -->
+    <div id="container">
+
+        <!-- Header -->
+        <header>
+            <h1>Selamat Datang di Profil Saya</h1>
+            <p><strong>Kenali saya</strong> lebih dekat melalui laman ini.</p>
+            <hr>
+        </header>
+
+        <!-- Navigasi -->
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#artikel">Artikel</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+            </ul>
+        </nav>
+
+        <!-- Halaman Utama -->
+        <main>
+
+            <!-- Bagian Profil -->
+            <section id="profil">
+                <h2>Profil Pribadi</h2>
+                <p>Nama: <strong>Edwin Darren Hasannudin</strong></p>
+                <p>Umur: 20 Tahun</p>
+                <p>Hobi: Membaca, menulis, dan <em>belajar</em>.</p>
+                <ul>
+                    <li>Suka dengan teknologi</li>
+                    <li>Suka berolahraga</li>
+                    <li>Menggemari literasi</li>
+                </ul>
+                <details>
+                    <summary>Lebih Lanjut Tentang Saya</summary>
+                    <p>Saya adalah seorang mahasiswa yang gemar belajar pemrograman dan memiliki cita-cita menjadi developer handal di masa depan.</p>
+                </details>
+            </section>
+
+            <!-- Bagian Artikel -->
+            <section id="artikel">
+                <h2>Artikel Terbaru</h2>
+
+                <!-- Artikel 1 -->
+                <article>
+                    <h3>Manfaat Membaca Buku</h3>
+                    <p>Membaca buku adalah salah satu hobi saya. Aktivitas ini membantu saya memperluas wawasan dan memperdalam pemahaman tentang dunia di sekitar saya.</p>
+                    <blockquote>"Buku adalah jendela dunia."</blockquote>
+                    <footer>Ditulis oleh Edwin</footer>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article>
+                    <h3>Pentingnya Belajar Pemrograman</h3>
+                    <p><strong>Pemrograman</strong> tidak hanya bermanfaat dalam karir, tetapi juga meningkatkan kemampuan berpikir logis dan <em>problem-solving</em>.</p>
+                    <ul>
+                        <li>Meningkatkan kemampuan logis</li>
+                        <li>Mengasah keterampilan memecahkan masalah</li>
+                        <li>Bermanfaat dalam karier</li>
+                    </ul>
+                    <footer>Ditulis oleh Edwin</footer>
+                </article>
+
+                <!-- Artikel 3 -->
+                <article>
+                    <h3>Mengapa Olahraga itu Penting?</h3>
+                    <p>Olahraga membantu menjaga kesehatan fisik dan mental. Saya sering berolahraga untuk menjaga <strong>stamina</strong> dan <em>kebugaran</em> tubuh.</p>
+                    <ol>
+                        <li>Kesehatan jantung</li>
+                        <li>Stamina yang lebih baik</li>
+                        <li>Meningkatkan mood</li>
+                    </ol>
+                    <footer>Ditulis oleh Edwin</footer>
+                </article>
+            </section>
+
+            <!-- Galeri Gambar -->
+            <section id="galeri">
+                <h2>Galeri</h2>
+                <figure>
+                    <img src="assets/BacaBuku.jpeg" alt="Foto 1" width="200">
+                    <figcaption>Foto Membaca Buku</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/BelajarPemrograman.jpeg" alt="Foto 2" width="200">
+                    <figcaption>Foto Belajar Pemrograman</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/Berolahraga.jpeg" alt="Foto 3" width="200">
+                    <figcaption>Foto Berolahraga</figcaption>
+                </figure>
+            </section>
+
+            <!-- Bagian Kontak -->
+            <section id="kontak">
+                <h2>Kontak</h2>
+                <p>Jika Anda ingin menghubungi saya, silakan isi formulir di bawah ini:</p>
+                <form action="https://www.example.com/send-message" method="POST">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required><br>
+                    
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda" rows="5" required></textarea><br>
+                    
+                    <input type="submit" value="Kirim Pesan">
+                </form>
+            </section>
+
+        </main>
+
+        <!-- Sidebar -->
+        <aside>
+            <h3>Informasi Tambahan</h3>
+            <p>Jangan lupa untuk terus belajar dan menjaga kesehatan setiap hari.</p>
+            <form action="https://www.example.com/subscribe" method="POST">
+                <label for="email">Langganan Newsletter:</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan email"><br>
+                <input type="submit" value="Langganan">
+            </form>
+        </aside>
+
+        <!-- Footer -->
+        <footer>
+            <hr>
+            <p>Kontak: <a href="mailto:edwinhasannudin@example.com">Edwinhasannudin@example.com</a></p>
+            <p>&copy; 2024 <strong>Edwin Darren Hasannudin</strong>. All rights reserved.</p>
+            <p>Social Media:</p>
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </footer>
+
+    </div> <!-- Akhir dari Container -->
+
+</body>
+</html>
